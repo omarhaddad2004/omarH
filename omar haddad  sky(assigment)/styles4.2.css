@@ -1,0 +1,284 @@
+.navbar-nav .nav-link.active {
+    font-weight: bold;
+    color: rgb(255, 255, 255); /* Active link color */
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #343a40;
+  }
+  
+  .new-request-btn {
+    background-color: #247f3e;
+    cursor: pointer;
+  }
+  
+  .custom-navbar {
+    background-color: #2e7d32; /* Green */
+    padding: 1rem;
+  }
+  
+  .navbar-brand {
+    color: white;
+    font-weight: bold;
+    font-size: 1.25rem;
+  }
+  
+  .navbar-nav .nav-link {
+    color: white;
+    margin-right: 1rem;
+    font-size: 1rem;
+  }
+  
+  .navbar-nav .nav-link.active {
+    font-weight: bold;
+  }
+  
+  .navbar-nav .nav-link:hover {
+    font-weight: bold;
+    color: #f0f0f0;
+  }
+  
+  .icons {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .nav-icon {
+    color: white;
+    font-size: 1.5rem;
+    margin-left: 0.5rem;
+  }
+  
+  .nav-icon:hover {
+    color: #f0f0f0;
+  }
+  
+  .navbar-toggler {
+    border: none;
+    color: white;
+  }
+  
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=UTF8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%281255, 255, 255, 1%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  }
+  
+  /* For smaller screens */
+  @media (max-width: 991.98px) {
+    .custom-navbar .navbar-nav {
+      text-align: center;
+    }
+    .icons {
+      justify-content: center;
+    }
+  }
+  
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  /* Header and search bar */
+  .header-row {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 10px;
+  }
+  
+  .title h3 {
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .search-bar {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    padding: 5px 15px;
+    width: 250px;
+    background-color: #f8f9fa;
+  }
+  
+  .search-bar input {
+    border: none;
+    outline: none;
+    flex: 1;
+    background-color: transparent;
+    padding-left: 10px;
+  }
+  
+  .search-bar i {
+    color: green;
+  }
+  
+  /* Cards Layout */
+  .cards-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start; /* Aligns cards to the left */
+    gap: 20px; /* Spacing between cards */
+  }
+  
+  .card {
+    width: 30%;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    background-color: white;
+    text-align: center;
+    position: relative;
+  }
+  
+  .card-checkbox {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+  
+  .card img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .card h5 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  
+  .information {
+    text-align: left;
+  }
+  
+  .information p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #666;
+  }
+  
+  /* Button styles */
+  .btn {
+    width: 100px;
+    padding: 8px;
+    border-radius: 5px;
+    font-size: 14px;
+    border: none;
+  }
+  
+  .btn-decline {
+    background-color: white;
+    border: 1px solid #1ca03e;
+    color: #1ca03e;
+  }
+  
+  .btn-decline:hover {
+    background-color: #f7f7f7;
+  }
+  
+  .btn-approve {
+    background-color: #1ca03e;
+    color: white;
+  }
+  
+  .btn-approve:hover {
+    background-color: #138f2a;
+  }
+  
+  /* Pagination */
+  .pagination-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .pagination-container {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #d3d3d3;
+    border-radius: 50px;
+    padding: 5px 10px;
+    gap: 8px;
+  }
+  
+  .page-btn {
+    background-color: transparent;
+    border: none;
+    color: #333;
+    font-size: 14px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .page-btn.active {
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .page-btn:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .prev-btn, .next-btn {
+    background-color: transparent;
+    font-size: 14px;
+  }
+  
+  .prev-btn:hover, .next-btn:hover {
+    background-color: #e0e0e0;
+    color: black;
+  }
+  .navbar-toggler-icon {
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/800px-Hamburger_icon.svg.png"); /* Bootstrap 4 default toggler icon */
+  }
+  
+  @media (max-width: 768px) {
+    .container, .content, .main-section {
+      width: 100%;
+      padding: 15px;
+    }
+  
+    .card, .box, .section {
+      width: 100%;
+      margin-bottom: 15px;
+    }
+  
+    .navbar {
+      flex-direction: column;
+    }
+  
+    .navbar .nav-items a {
+      width: 100%;
+      text-align: center;
+    }
+  
+    .btn {
+      width: 100%;
+      font-size: 16px;
+    }
+  
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  
+    h1, h2, h3 {
+      font-size: 1.5em;
+    }
+  
+    p {
+      font-size: 1em;
+    }
+  }

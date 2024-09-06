@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vacation page</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link href="styles4.css" rel="stylesheet"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <div id="navbar-placeholder"></div>
+
+           <script>
+              fetch('navbar.html')
+              .then(response => response.text())
+               .then(data => {
+               document.getElementById('navbar-placeholder').innerHTML = data;
+              })
+              .catch(error => console.error('Error loading navbar:', error));
+            </script>
+
+
+  <div class="container mt-5">
+    <div class="vacation-container" id="vacationContainer">
+        <div class="vacation-header d-flex align-items-center justify-content-between">
+            <div class="d-flex align-items-center">
+                <i class="fas fa-clipboard-list fa-2x mr-2"></i>
+                <h5 class="mb-0">Vacation Requests</h5>
+            </div>
+            <div class="search-bar d-flex align-items-center searchInput">
+                <i class="fas fa-search"></i>
+                <input type="text" onkeyup="filterRequests()" id="searchInput" placeholder="Search...">
+            </div>
+        </div>
+        
+      
+        
+        <div class="checkbox-row d-flex align-items-center">
+          <input type="checkbox" id="select-all">
+          <label for="select-all" class="ms-2">Select All</label>
+        </div>
+      
+        
+        <div class="cards-row d-flex flex-wrap">
+          
+          <div class="card">
+            <div class="card-checkbox">
+              <input type="checkbox" class="card-checkbox-input">
+            </div>
+            <div class="d-flex flex-column align-items-center">
+                <img src="https://wpuploads.appadvice.com/wp-content/uploads/2014/10/facebookanon.jpg" alt="Profile Image" class="profile-image mb-3">
+                <h5>jack haddad</h5>
+            </div>
+            <div class="information text-start mt-3">
+                <p>Submitted on:</p>
+                <p><strong>7/3/2024</strong></p>
+                <p>Duration:</p>
+                <p><strong>2 Weeks (1/4/2023 - 14/4/2023)</strong></p>
+                <p>Salary:</p>
+                <p><strong>1000 AED</strong></p>
+            </div>
+            <div class="d-flex justify-content-between mt-4">
+                <button class="btn btn-decline">Decline</button>
+                <button class="btn btn-approve">Approve</button>
+            </div>
+        </div>
+          <!--2-->
+          <div class="card">
+            <div class="card-checkbox">
+              <input type="checkbox" class="card-checkbox-input">
+            </div>
+            <div class="d-flex flex-column align-items-center">
+                <img src="https://wpuploads.appadvice.com/wp-content/uploads/2014/10/facebookanon.jpg" alt="Profile Image" class="profile-image mb-3">
+                <h5>panoni haddad</h5>
+            </div>
+            <div class="information text-start mt-3">
+                <p>Submitted on:</p>
+                <p><strong>7/3/2024</strong></p>
+                <p>Duration:</p>
+                <p><strong>2 Weeks (1/4/2023 - 14/4/2023)</strong></p>
+                <p>Salary:</p>
+                <p><strong>1000 AED</strong></p>
+            </div>
+            <div class="d-flex justify-content-between mt-4">
+                <button class="btn btn-decline">Decline</button>
+                <button class="btn btn-approve">Approve</button>
+            </div>
+        </div>
+          <!--3-->
+          <div class="card">
+            <div class="card-checkbox">
+              <input type="checkbox" class="card-checkbox-input">
+            </div>
+            <div class="d-flex flex-column align-items-center">
+                <img src="https://wpuploads.appadvice.com/wp-content/uploads/2014/10/facebookanon.jpg" alt="Profile Image" class="profile-image mb-3">
+                <h5>meson sammour</h5>
+            </div>
+            <div class="information text-start mt-3">
+                <p>Submitted on:</p>
+                <p><strong>7/3/2024</strong></p>
+                <p>Duration:</p>
+                <p><strong>2 Weeks (1/4/2023 - 14/4/2023)</strong></p>
+                <p>Salary:</p>
+                <p><strong>1000 AED</strong></p>
+            </div>
+            <div class="d-flex justify-content-between mt-4">
+                <button class="btn btn-decline">Decline</button>
+                <button class="btn btn-approve">Approve</button>
+            </div>
+        </div>
+          <!--4-->
+          <div class="card">
+            <div class="card-checkbox">
+              <input type="checkbox" class="card-checkbox-input">
+            </div>
+            <div class="d-flex flex-column align-items-center">
+                <img src="https://wpuploads.appadvice.com/wp-content/uploads/2014/10/facebookanon.jpg" alt="Profile Image" class="profile-image mb-3">
+                <h5>heba haddad</h5>
+            </div>
+            <div class="information text-start mt-3">
+                <p>Submitted on:</p>
+                <p><strong>7/3/2024</strong></p>
+                <p>Duration:</p>
+                <p><strong>2 Weeks (1/4/2023 - 14/4/2023)</strong></p>
+                <p>Salary:</p>
+                <p><strong>1000 AED</strong></p>
+            </div>
+            <div class="d-flex justify-content-between mt-4">
+                <button class="btn btn-decline">Decline</button>
+                <button class="btn btn-approve">Approve</button>
+            </div>
+        </div>
+          <!--5-->
+          <div class="card">
+            <div class="card-checkbox">
+              <input type="checkbox" class="card-checkbox-input">
+            </div>
+            <div class="d-flex flex-column align-items-center">
+                <img src="https://wpuploads.appadvice.com/wp-content/uploads/2014/10/facebookanon.jpg" alt="Profile Image" class="profile-image mb-3">
+                <h5>own hatamle</h5>
+            </div>
+            <div class="information text-start mt-3">
+                <p>Submitted on:</p>
+                <p><strong>7/3/2024</strong></p>
+                <p>Duration:</p>
+                <p><strong>2 Weeks (1/4/2023 - 14/4/2023)</strong></p>
+                <p>Salary:</p>
+                <p><strong>1000 AED</strong></p>
+            </div>
+            <div class="d-flex justify-content-between mt-4">
+                <button class="btn btn-decline">Decline</button>
+                <button class="btn btn-approve">Approve</button>
+            </div>
+        </div>
+          <!--6-->
+          <div class="card">
+            <div class="card-checkbox">
+              <input type="checkbox" class="card-checkbox-input">
+            </div>
+            <div class="d-flex flex-column align-items-center">
+                <img src="https://wpuploads.appadvice.com/wp-content/uploads/2014/10/facebookanon.jpg" alt="Profile Image" class="profile-image mb-3">
+                <h5>lama soso </h5>
+            </div>
+            <div class="information text-start mt-3">
+                <p>Submitted on:</p>
+                <p><strong>7/3/2024</strong></p>
+                <p>Duration:</p>
+                <p><strong>2 Weeks (1/4/2023 - 14/4/2023)</strong></p>
+                <p>Salary:</p>
+                <p><strong>1000 AED</strong></p>
+            </div>
+            <div class="d-flex justify-content-between mt-4">
+                <button class="btn btn-decline">Decline</button>
+                <button class="btn btn-approve">Approve</button>
+            </div>
+        </div>
+          <!--7-->
+          <div class="card">
+            <div class="card-checkbox">
+              <input type="checkbox" class="card-checkbox-input">
+            </div>
+            <div class="d-flex flex-column align-items-center">
+                <img src="https://wpuploads.appadvice.com/wp-content/uploads/2014/10/facebookanon.jpg" alt="Profile Image" class="profile-image mb-3">
+                <h5>kamel hantoli</h5>
+            </div>
+            <div class="information text-start mt-3">
+                <p>Submitted on:</p>
+                <p><strong>7/3/2024</strong></p>
+                <p>Duration:</p>
+                <p><strong>2 Weeks (1/4/2023 - 14/4/2023)</strong></p>
+                <p>Salary:</p>
+                <p><strong>1000 AED</strong></p>
+            </div>
+            <div class="d-flex justify-content-between mt-4">
+                <button class="btn btn-decline">Decline</button>
+                <button class="btn btn-approve">Approve</button>
+            </div>
+        </div>
+          <!--8-->
+          <div class="card">
+            <div class="card-checkbox">
+              <input type="checkbox" class="card-checkbox-input">
+            </div>
+            <div class="d-flex flex-column align-items-center">
+                <img src="https://wpuploads.appadvice.com/wp-content/uploads/2014/10/facebookanon.jpg" alt="Profile Image" class="profile-image mb-3">
+                <h5>bsbs haddad</h5>
+            </div>
+            <div class="information text-start mt-3">
+                <p>Submitted on:</p>
+                <p><strong>7/3/2024</strong></p>
+                <p>Duration:</p>
+                <p><strong>2 Weeks (1/4/2023 - 14/4/2023)</strong></p>
+                <p>Salary:</p>
+                <p><strong>1000 AED</strong></p>
+            </div>
+            <div class="d-flex justify-content-between mt-4">
+                <button class="btn btn-decline">Decline</button>
+                <button class="btn btn-approve">Approve</button>
+            </div>
+        </div>
+          <!--9-->
+          <div class="card">
+            <div class="card-checkbox">
+              <input type="checkbox" class="card-checkbox-input">
+            </div>
+            <div class="d-flex flex-column align-items-center">
+                <img src="https://wpuploads.appadvice.com/wp-content/uploads/2014/10/facebookanon.jpg" alt="Profile Image" class="profile-image mb-3">
+                <h5>mewo haddad</h5>
+            </div>
+            <div class="information text-start mt-3">
+                <p>Submitted on:</p>
+                <p><strong>7/3/2024</strong></p>
+                <p>Duration:</p>
+                <p><strong>2 Weeks (1/4/2023 - 14/4/2023)</strong></p>
+                <p>Salary:</p>
+                <p><strong>1000 AED</strong></p>
+            </div>
+            <div class="d-flex justify-content-between mt-4">
+                <button class="btn btn-decline">Decline</button>
+                <button class="btn btn-approve">Approve</button>
+            </div>
+        </div>
+      
+          
+        </div>
+      
+        
+        <div class="pagination-wrapper">
+            <div class="pagination-container">
+              <button class="page-btn prev-btn" onclick="navigateToPrevious()">&lt;</button>
+              <button class="page-btn" onclick="navigateTo('html4.html')">1</button>
+              <button class="page-btn" onclick="navigateTo('html4.2.html')">2</button>
+              <button class="page-btn" onclick="navigateTo('html4.3.html')">3</button>
+              <button class="page-btn next-btn" onclick="navigateToNext()">&gt;</button>
+            </div>
+          </div>
+        </div>
+      
+          <script>
+            function navigateTo(page) {
+                window.location.href = page;
+            }
+      
+            function navigateToNext() {
+                window.location.href = 'html4.3.html'; // Go to the next page
+            }
+      
+            function navigateToPrevious() {
+                window.location.href = 'html4.html'; // Go to the previous page
+            }
+          </script>
+          
+          <script>
+            document.addEventListener('DOMContentLoaded', function() {
+              const selectAllCheckbox = document.getElementById('select-all');
+              const cardCheckboxes = document.querySelectorAll('.card-checkbox-input');
+              
+              selectAllCheckbox.addEventListener('change', function() {
+                  const isChecked = selectAllCheckbox.checked;
+                  cardCheckboxes.forEach(checkbox => {
+                      checkbox.checked = isChecked;
+                  });
+              });
+            });
+      
+            const filterRequests = () => {
+              const searchbox = document.getElementById("searchInput").value.toUpperCase();
+              const cards = document.querySelectorAll(".card");
+              const requestNames = document.querySelectorAll(".card h5");
+      
+              for (let i = 0; i < requestNames.length; i++) {
+                  let match = requestNames[i];
+                  
+                  if (match) {
+                      let textValue = match.textContent || match.innerHTML;
+      
+                      if (textValue.toUpperCase().indexOf(searchbox) > -1) {
+                          cards[i].style.display = ""; 
+                      } else {
+                          cards[i].style.display = "none";
+                      }
+                  }
+              }
+            };
+          </script>
+          <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+          <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+          <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    
+</body>
+</html>

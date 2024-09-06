@@ -1,0 +1,477 @@
+.towSmallCards {
+    background-color: #247e3d;
+    color: white;
+}
+.longCards {
+    background-color: rgb(221, 221, 221);
+    color: rgb(0, 0, 0);
+}
+.boxSize {
+    border-radius: 1.25rem; /* 20px -> 1.25rem */
+    height: 12.5rem; /* 200px -> 12.5rem */
+}
+.carousel-control-prev,
+.carousel-control-next {
+    display: none;
+}
+.Vacation-Requests {
+    background-color: #ebebeb;
+    border-radius: 1.25rem; /* 20px -> 1.25rem */
+}
+.requestsCard {
+    border-radius: 1.25rem; /* 20px -> 1.25rem */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #343a40;
+}
+
+.new-request-btn {
+    background-color: #247f3e;
+    cursor: pointer;
+}
+
+.custom-navbar {
+    background-color: #2e7d32;
+    padding: 1rem;
+}
+.navbar-nav .nav-link.active {
+    font-weight: bold;
+    color: white;
+}
+
+.navbar-brand {
+    color: white;
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+.navbar-nav .nav-link {
+    color: rgb(255, 255, 255);
+    margin-right: 1rem;
+    font-size: 1rem;
+}
+
+.navbar-nav .nav-link.active {
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link:hover {
+    font-weight: bold;
+    color: #f0f0f0;
+}
+
+.icons {
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-icon {
+    color: white;
+    font-size: 1.5rem;
+    margin-left: 0.5rem;
+}
+
+.nav-icon:hover {
+    color: #f0f0f0;
+}
+
+.navbar-toggler {
+    border: none;
+    color: white;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=UTF8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%281255, 255, 255, 1%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* For smaller screens */
+@media (max-width: 991.98px) {
+    .custom-navbar .navbar-nav {
+        text-align: center;
+    }
+    .icons {
+        justify-content: center;
+    }
+}
+
+.one-line {
+    white-space: nowrap;
+    cursor: pointer;
+    text-align: center;
+}
+/* Profile Card */
+.profile-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border: 0.0625rem solid #a3a1a1; /* 1px -> 0.0625rem */
+    padding: 0.625rem; /* 10px -> 0.625rem */
+    border-radius: 1.25rem; /* 20px -> 1.25rem */
+    margin-bottom: 0.625rem; /* 10px -> 0.625rem */
+}
+.profile-info {
+    display: flex;
+    align-items: center;
+}
+.profile-info img {
+    border-radius: 50%;
+    width: 4.375rem; /* 70px -> 4.375rem */
+    height: 4.375rem; /* 70px -> 4.375rem */
+    margin-right: 1.25rem; /* 20px -> 1.25rem */
+}
+.profile-details {
+    font-size: 1rem;
+}
+
+/* Summary Cards */
+.summary-cards {
+    display: flex !important;
+    justify-content: start !important;
+}
+.summary-card {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    width: 15.625rem !important; /* 250px -> 15.625rem */
+    background-color: #247f3e !important;
+    padding: 0.9375rem !important; /* 15px -> 0.9375rem */
+    border-radius: 0;
+    margin-right: 0.9375rem !important; /* 15px -> 0.9375rem */
+    transition: all 0.3s ease !important;
+    color: white !important;
+}
+.summary-card:last-child {
+    margin-right: 0 !important;
+}
+.left-part {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+}
+.summary-card i {
+    margin-bottom: 0 !important;
+    color: white !important;
+}
+.summary-card p {
+    margin: 0 !important;
+    color: white !important;
+}
+.summary-card h3 {
+    margin: 0 !important;
+    font-size: 1.5rem !important; /* 24px -> 1.5rem */
+    color: white !important;
+    text-align: right !important;
+    flex-shrink: 0 !important;
+}
+/* Hover effect */
+.summary-card:hover {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2) !important; /* 8px -> 0.5rem, 16px -> 1rem */
+}
+
+/* Latest News */
+.latest-news-section {
+    margin-top: 1.875rem !important; /* 30px -> 1.875rem */
+}
+.latest-news-section img {
+    width: 100%;
+    height: 18.75rem; /* 300px -> 18.75rem */
+    object-fit: cover;
+    border-radius: 0.625rem; /* 10px -> 0.625rem */
+}
+
+/* Search Container */
+.search-bar {
+    display: flex;
+    align-items: center;
+    border: 0.0625rem solid #ccc; /* 1px -> 0.0625rem */
+    border-radius: 1.875rem; /* 30px -> 1.875rem */
+    padding: 0.3125rem 0.9375rem; /* 5px 15px -> 0.3125rem 0.9375rem */
+    width: 15.625rem; /* 250px -> 15.625rem */
+    background-color: #f8f9fa;
+}
+
+.search-bar input {
+    border: none;
+    outline: none;
+    flex: 1;
+    background-color: transparent;
+    padding-left: 0.625rem; /* 10px -> 0.625rem */
+}
+.search-bar i {
+    color: green;
+}
+.search-container {
+    display: flex;
+    align-items: center;
+    background-color: #f9f9f9;
+    border: 0.0625rem solid #ccc; /* 1px -> 0.0625rem */
+    border-radius: 1.5625rem; /* 25px -> 1.5625rem */
+    padding: 0.3125rem 0.9375rem; /* 5px 15px -> 0.3125rem 0.9375rem */
+    width: 15.625rem; /* 250px -> 15.625rem */
+    box-shadow: inset 0 0.0625rem 0.1875rem rgba(0, 0, 0, 0.1); /* 1px 3px -> 0.0625rem 0.1875rem */
+}
+.icon-search::before {
+    content: "\1F50D";
+    color: #247f3e;
+    font-size: 1.2rem; /* No change, kept as rem */
+    margin-right: 0.5rem; /* 8px -> 0.5rem */
+}
+.search-input {
+    border: none;
+    outline: none;
+    width: 100%;
+    background-color: transparent;
+    font-size: 0.875rem; /* 14px -> 0.875rem */
+    color: #666;
+}
+.search-input::placeholder {
+    color: #ccc;
+}
+.vacation-header {
+    margin-top: 1.25rem; /* 20px -> 1.25rem */
+    margin-bottom: 1.25rem; /* 20px -> 1.25rem */
+}
+.vacation-container {
+    padding-top: 1.25rem; /* 20px -> 1.25rem */
+}
+.vacation-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.25rem; /* 20px -> 1.25rem */
+}
+.cards-row {
+    display: flex;
+    justify-content: flex-start;
+    gap: 1.25rem; /* 20px -> 1.25rem */
+    margin-top: 1.25rem; /* 20px -> 1.25rem */
+}
+.card {
+    width: 30%;
+    border: 0.0625rem solid #e0e0e0; /* 1px -> 0.0625rem */
+    border-radius: 0.5rem; /* 8px -> 0.5rem */
+    box-shadow: 0 0.125rem 0.3125rem rgba(0, 0, 0, 0.1); /* 2px 5px -> 0.125rem 0.3125rem */
+    padding: 1.25rem; /* 20px -> 1.25rem */
+    background-color: white;
+    text-align: center;
+}
+.card img {
+    width: 5rem; /* 80px -> 5rem */
+    height: 5rem; /* 80px -> 5rem */
+    border-radius: 50%;
+    object-fit: cover;
+}
+.card h5 {
+    font-size: 1.125rem; /* 18px -> 1.125rem */
+    font-weight: bold;
+    margin: 0.625rem 0; /* 10px -> 0.625rem */
+}
+.information {
+    text-align: left;
+}
+.information p {
+    margin: 0.3125rem 0; /* 5px -> 0.3125rem */
+    font-size: 0.875rem; /* 14px -> 0.875rem */
+    color: #666;
+}
+/* Button styles */
+.btn {
+    width: 6.25rem; /* 100px -> 6.25rem */
+    padding: 0.5rem; /* 8px -> 0.5rem */
+    border-radius: 0.3125rem; /* 5px -> 0.3125rem */
+    font-size: 0.875rem; /* 14px -> 0.875rem */
+    border: none;
+}
+.btn-decline {
+    background-color: white;
+    border: 0.0625rem solid #1ca03e; /* 1px -> 0.0625rem */
+    color: #1ca03e;
+}
+.btn-decline:hover {
+    background-color: #f7f7f7;
+}
+.btn-approve {
+    background-color: #1ca03e;
+    color: white;
+}
+.btn-approve:hover {
+    background-color: #138f2a;
+}
+
+/* Utility classes */
+.d-flex {
+    display: flex;
+}
+.flex-column {
+    flex-direction: column;
+}
+.flex-row {
+    flex-direction: row;
+}
+.align-items-center {
+    align-items: center;
+}
+.justify-content-between {
+    justify-content: space-between;
+}
+.ms-2 {
+    margin-left: 0.625rem; /* 10px -> 0.625rem */
+}
+.view-more-container {
+    text-align: right;
+    margin-top: 1.25rem; /* 20px -> 1.25rem */
+}
+.view-more {
+    color: #247f3e;
+    font-size: 1rem;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem; /* 8px 16px -> 0.5rem 1rem */
+    border-radius: 1.5625rem; /* 25px -> 1.5625rem */
+    border: 0.125rem solid #247f3e; /* 2px -> 0.125rem */
+    transition: background-color 0.3s, color 0.3s;
+}
+.view-more:hover {
+    background-color: #247f3e;
+    color: white;
+}
+.navbar-toggler-icon {
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/800px-Hamburger_icon.svg.png"); /* Bootstrap 4 default toggler icon */
+  }
+/* Responsive styles */
+@media (max-width: 768px) {
+    .longCards, .boxSize {
+        height: auto;
+    }
+    .card {
+        width: 100%;
+    }
+    .cards-row {
+        flex-direction: column;
+    }
+}@media (max-width: 768px) {
+    /* Make all cards stack vertically on smaller screens */
+    .cards-row {
+        flex-direction: column;
+        gap: 1rem; /* Adjust gap between cards */
+    }
+
+    .card {
+        width: 100%; /* Make cards take full width */
+        margin-bottom: 1rem;
+    }
+
+    /* Adjust the navbar to stack links vertically */
+    .navbar-nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar-nav .nav-link {
+        margin-right: 0;
+        margin-bottom: 0.5rem; /* Add spacing between navbar links */
+    }
+
+    /* Make profile image smaller */
+    .profile-info img {
+        width: 3.75rem; /* Smaller profile image */
+        height: 3.75rem;
+        margin-right: 1rem;
+    }
+
+    /* Adjust padding and margins for smaller screens */
+    .profile-card, .summary-card {
+        padding: 0.75rem;
+    }
+
+    .profile-details {
+        font-size: 0.875rem; /* Reduce font size */
+    }
+
+    /* Adjust buttons */
+    .btn {
+        width: 100%; /* Make buttons take full width */
+        font-size: 0.875rem; /* Reduce button font size */
+    }
+
+    /* Search bar adjustments */
+    .search-bar, .search-container {
+        width: 100%; /* Make search bar full width */
+        padding: 0.5rem;
+    }
+
+    /* Adjust font sizes for headings */
+    h2, h3, h4, h5 {
+        font-size: 1.25rem; /* Reduce font size for headings */
+    }
+
+    /* Adjust image sizes in latest news section */
+    .latest-news-section img {
+        height: 12.5rem; /* Reduce image height */
+    }
+
+    /* Remove excess padding on smaller screens */
+    .container, .vacation-container {
+        padding: 0.5rem; /* Less padding for smaller screens */
+    }
+}
+ /* Default (desktop and larger screens) */
+ .card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.d-grid {
+    display: flex;
+    gap: 10px;
+}
+
+/* Mobile-specific styles */
+@media (max-width: 767px) {
+    .vacation-card {
+        width: 100%;
+        /* Make each card take full width */
+        margin-bottom: 20px;
+    }
+
+    .card-body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* Center-align everything inside the card */
+        text-align: center;
+    }
+
+    .card-body img {
+        margin-bottom: 15px;
+    }
+
+    .card-body h5 {
+        margin-bottom: 10px;
+    }
+
+    .d-grid {
+        display: flex;
+        justify-content: space-around;
+        /* Center buttons at the bottom */
+        margin-top: 20px;
+        /* Space above buttons */
+        width: 100%;
+    }
+
+    .d-grid button {
+        flex: 1;
+        max-width: 120px;
+    }
+
+    /* Optional: Adjust the search bar on mobile */
+    .search-bar {
+        width: 100%;
+        /* Make search bar take full width */
+    }
+}
